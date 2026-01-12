@@ -1,0 +1,10 @@
+fastapi==0.115.6
+uvicorn[standard]==0.30.6
+pydantic==2.10.4
+pydantic-settings==2.7.0
+python-multipart==0.0.19
+boto3==1.35.85
+botocore==1.35.85
+motor==3.6.0
+redis==5.2.1
+python-json-logger==2.0.7
