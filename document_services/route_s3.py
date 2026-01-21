@@ -29,9 +29,12 @@ async def headers_dep(
 @router.post("/upload")
 async def upload(
     headers: S3Headers = Depends(headers_dep),
-    file: UploadFile = File(...),
+    file: Optional[UploadFile] = File(default=None),
     commons: dict = Depends(common_headers),
 ):
+    if file is None:
+        # Debugging: Why is file missing?
+        return {"ok": False, "source": "new-service", "error": "file field is missing in multipart body"}
     return await upload_document(headers=headers, file=file)
 
 

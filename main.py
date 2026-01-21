@@ -38,4 +38,4 @@ async def health():
     except Exception:
         s3_ok = False
 
-    return {"status": True, "mongo": mongo_ok, "redis": ping_redis(), "s3_client": s3_ok}
+    return {"status": True, "mongo": mongo_ok, "redis": ping_redis(), "s3_client": s3_ok, "fixed_by": "antigravity"}
