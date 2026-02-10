@@ -113,6 +113,8 @@ async def upload_document(headers: S3Headers, file: UploadFile):
         {
             "type": headers.type,
             "applicant_id": headers.applicant_id,
+            "advertisement_id": headers.advertisement_id,
+            "lang": headers.lang,
             "type_of_document": headers.type_of_document,
             "bucket": bucket,
             "key": key,
@@ -130,6 +132,8 @@ async def upload_document(headers: S3Headers, file: UploadFile):
             "archived_to": archived_to,
             "type": headers.type,
             "applicant_id": headers.applicant_id,
+            "advertisement_id": headers.advertisement_id,
+            "lang": headers.lang,
             "type_of_document": headers.type_of_document,
         },
     )

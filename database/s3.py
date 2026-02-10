@@ -37,4 +37,6 @@ def bucket_for_type(t: str) -> str:
         return settings.user_bucket
     if t == "recruitment":
         return settings.recruitment_bucket
-    raise ValueError("Invalid type header. Allowed: user, recruitment")
+    if t == "advertisement":
+        return settings.advertisement_bucket
+    raise ValueError("Invalid type header. Allowed: user, recruitment, advertisement")

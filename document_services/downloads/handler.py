@@ -48,6 +48,8 @@ async def download_document(headers: S3Headers, filename: str | None = None) -> 
     await write_audit("download", {
         "type": headers.type,
         "applicant_id": headers.applicant_id,
+        "advertisement_id": headers.advertisement_id,
+        "lang": headers.lang,
         "type_of_document": headers.type_of_document,
         "bucket": bucket,
         "key": key,

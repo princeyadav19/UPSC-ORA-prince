@@ -47,9 +47,10 @@ class Settings(BaseSettings):
     s3_secure: bool = Field(default=False, alias="S3_SECURE")
     s3_addressing_style: str = Field(default="path", alias="S3_ADDRESSING_STYLE")
 
-    # Buckets (ONLY two)
+    # Buckets
     user_bucket: str = Field(default="uploads", alias="USER_BUCKET")
     recruitment_bucket: str = Field(default="recruitment", alias="RECRUITMENT_BUCKET")
+    advertisement_bucket: str = Field(default="advertisement", alias="ADVERTISEMENT_BUCKET")
 
 
 settings = Settings()
