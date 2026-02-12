@@ -48,7 +48,7 @@ spec:
             - name: MONGO_AUDIT_COLLECTION
               value: "s3_audit_logs"
             - name: S3_ENDPOINT_URL
-              value: "http://192.168.122.162:9000"
+              value: "http://192.168.122.162:6000"
             - name: S3_ACCESS_KEY
               value: "minioadmin"
             - name: S3_SECRET_KEY
