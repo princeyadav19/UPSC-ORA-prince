@@ -9,7 +9,7 @@ from document_services.dtos import S3Headers
 from document_services.uploads.handler import upload_document
 from document_services.downloads.handler import download_document
 
-router = APIRouter(prefix="/s3", tags=["S3 Documents"])
+router = APIRouter(prefix="/ora_api/s3", tags=["S3 Documents"])
 
 
 async def headers_dep(

@@ -11,7 +11,7 @@ from document_services.route_s3 import router as s3_router
 
 setup_logging()
 
-app = FastAPI(title="S3 Service", docs_url="/docs", redoc_url=None, openapi_url="/openapi.json")
+app = FastAPI(title="S3 Service", docs_url="/ora_api/s3/docs", redoc_url=None, openapi_url="/ora_api/s3/openapi.json")
 
 app.add_middleware(
     CORSMiddleware,
