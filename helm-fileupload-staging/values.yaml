@@ -1,0 +1,13 @@
+replicaCount: 1
+
+image:
+  registry: registry.upsc.gov.in:5000
+  repository: fileupload/fileupload 
+  tag: "2026-02-11-15-53"
+  pullPolicy: IfNotPresent
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+
