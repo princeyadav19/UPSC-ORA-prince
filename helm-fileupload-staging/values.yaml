@@ -1,8 +1,8 @@
 replicaCount: 1
 
 image:
-  registry: registry.upsc.gov.in:5000
-  repository: fileupload/fileupload 
+  registry: 10.212.108.81:6001/ora
+  repository: fileupload 
   tag: "2026-02-11-15-53"
   pullPolicy: IfNotPresent
 
