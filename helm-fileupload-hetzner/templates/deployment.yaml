@@ -60,7 +60,7 @@ spec:
             - name: S3_ADDRESSING_STYLE
               value: "path"
             - name: USER_BUCKET
-              value: "uploads"
+              value: "orauploads"
             - name: RECRUITMENT_BUCKET
               value: "recruitment"
           ports:
