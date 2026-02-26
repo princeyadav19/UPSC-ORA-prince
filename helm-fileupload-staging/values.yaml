@@ -1,0 +1,13 @@
+replicaCount: 1
+
+image:
+  registry: 10.212.108.81:6001/ora
+  repository: fileupload 
+  tag: "2026-02-11-15-53"
+  pullPolicy: IfNotPresent
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+
