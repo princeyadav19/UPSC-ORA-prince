@@ -16,7 +16,7 @@ class DocRule:
 DOC_RULES: Dict[str, DocRule] = {
     "name_change": DocRule("name_change", 50, 300, (".pdf",), ("application/pdf",)),
     "board_certificate": DocRule("board_certificate", 50, 300, (".pdf",), ("application/pdf",)),
-    "id_card": DocRule("id_card", 20, 500, (".jpg", ".jpeg", ".png", ".pdf"), ("image/jpeg", "image/png", "application/pdf")),
+    "id_card": DocRule("id_card", 1, 500, (".jpg", ".jpeg", ".png", ".pdf"), ("image/jpeg", "image/png", "application/pdf")),
 }
 
 DEFAULT_RULE = DocRule("others", 1, 2048, (), ())
