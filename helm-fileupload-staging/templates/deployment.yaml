@@ -60,9 +60,9 @@ spec:
             - name: S3_ADDRESSING_STYLE
               value: "path"
             - name: USER_BUCKET
-              value: "orauploads"
+              value: "ngrp-candidates"
             - name: RECRUITMENT_BUCKET
-              value: "recruitment"
+              value: "exams-notice"
           ports:
             - containerPort: 9002
               protocol: TCP
