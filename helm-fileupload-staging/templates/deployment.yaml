@@ -62,7 +62,7 @@ spec:
             - name: USER_BUCKET
               value: "ngrp-candidates"
             - name: RECRUITMENT_BUCKET
-              value: "exams-notice"
+              value: "exams"
           ports:
             - containerPort: 9002
               protocol: TCP
